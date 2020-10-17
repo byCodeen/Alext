@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-title" content="As'ad | Profile">
+  <title>As'ad | Profile</title>
+  <link rel="apple-touch-icon" type="image/png" href="https://image.flaticon.com/icons/svg/2571/2571136.svg">
+  <link rel="shortcut icon" type="image/x-icon" href="https://image.flaticon.com/icons/svg/2571/2571136.svg">
+  <link rel="mask-icon" type="" href="https://image.flaticon.com/icons/svg/2571/2571136.svg" color="#111">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/4a749fecae.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+</head>
+<body>
+  <div class="card scroll" data-state="#about">
+    <div class="card-header">
+      <div class="card-cover" style="background-image: url('/img/g1730.png')"></div>
+        <img class="card-avatar" src="/img/codeenlogo.png" alt="avatar">
+        <h1 class="card-fullname">ALUMEXT</h1>
+        <h2 class="card-jobtitle">CALCULATOR BY CODEEN</h2>
+      </div>
+      <div class="card-main">
+        <div class="card-section is-active" id="about">
+          <div class="card-content">
+            <div class="card-subtitle">ABOUT</div>
+            <p class="card-desc">
+              ALUMEXT Calculator Designed for Extrusion Line Calculation, Such as Billet Lenght, Billet Weight, Different Weight, and Recovery.
+            </p>
+          </div>
+          <div class="card-social">
+            <a href="https://www.linkedin.com/in/hgad/" target="blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/_muhasad" target="blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://dribbble.com/muhasad" target="blank"><i class="fab fa-dribbble"></i></a>
+            <a href="https://www.youtube.com/channel/UCeKMWPMfUcohrc7vKZog7qw" target="blank"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="card-section" id="length">
+          <div class="card-content">
+            <div class="card-subtitle">BILLET LENGTH  CALCULATOR</div>
+            <p >Billet Diameter 
+              <span>
+                <select name="" id="billetsize">
+                  <option value="0.558">4</option>
+                  <option value="0.872">5</option>
+                  <option value="0">6</option>
+                  <option value="1.712">7</option>
+                </select>
+              </span>
+            </p>
+            <p class="card-desc">
+              Calculate your Billet Length as per Aluminium Profile  Weight.
+            </p>
+            <form class="float-label" id="input" onsubmit="blcCalc()">
+              <div class="control">
+                <input name="formname" placeholder="Order Length" type="text" id="mtr" required>
+                <label for="formname">Order Length <span class="tool" data-tip="hi"><i class="fas fa-question-circle"></i></span></label>
+              </div>
+              <div class="control">
+                <input name="formname" placeholder="Finish Cut" type="text" id="pcs" required>
+                <label for="formname">Finish Cut</label>
+              </div>
+              <div class="control">
+                <input placeholder="Joint End" type="text" id="wmtr" required>
+                <label for="formname">Joint End</label>
+              </div>
+              <div class="control">
+                <input placeholder="Cavity Imp" type="text" id="cvt" required>
+                <label for="formname">Cavity Imp</label>
+              </div>
+              <div class="control">
+                <input placeholder="Aluminium Weight" type="text" id="kgm" required>
+                <label for="formname">Aluminium Weight</label>
+              </div> 
+              <div class="control">
+                <input placeholder="Cut Saw Times" type="text" id="times" required>
+                <label for="formname">Cut Saw Times</label>
+              </div> 
+              <div class="control">
+                <input placeholder="Butt End" type="text" name="olength" id="cap" required>
+                <label for="formname">Butt End</label>
+              </div> 
+            </form>
+          </div>
+
+          
+            <button class="contact-me" onclick="blcCalc()">Calculate</button>
+            <button class="contact-me" onclick="myReset()">Reset</button>
+          
+            
+          <div>
+            <p>Billet Length: <span id="blcResult"></span></p>
+          </div>
+
+          </div>
+        </div>
+        <div class="card-section" id="portfolio">
+          <div class="card-content">
+            <div class="card-subtitle">MY PORTFOLIO</div>
+            <div class="card-timeline">
+              <div class="card-item" data-year="2020">
+                <div class="card-item-title">Coding Experience Bootcamp by <span>CfDS x Progate</span></div>
+                <div class="card-item-desc">
+                  Web Development Path (NodeJs)
+                  <a href="#" target="blank">UGMxProgateC13</a>
+                </div>
+              </div>  
+              <div class="card-item" data-year="2020">
+                <div class="card-item-title">Aluminium Extrusion Calculator for <span>Kamco Aluminium</span></div>
+                <div class="card-item-desc">
+                  Web App and PWA, To solve and ease Extrusion Line on Planning
+                  <a href="#" target="blank">Alumext Calculator</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-section" id="contact">
+          <div class="card-content">
+            <div class="card-subtitle">DEVELOPER CONTACT</div>
+            <div class="card-contact-wrapper">
+              <div class="card-contact">
+                <svg class="lnr lnr-user" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <use xlink:href="#lnr-user"></use></svg>
+                CODEEN Developer  
+              </div>
+              <div class="card-contact">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle></svg>
+              Coastal Bintulu - Miri, Sarawak, Malaysia, 97000
+            </div>
+            <div class="card-contact">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <path d="M22 6l-10 7L2 6"></path></svg>
+              asadjemahri@gmail.com
+            </div>
+            <a href="https://api.whatsapp.com/message/WGKRYFNAF4T3K1" target="blank"><button class="contact-me">PROJECT? CONTACT ME <i class="fab fa-whatsapp"></i></button></a>
+          </div>
+        </div>
+      </div>
+      <div class="card-buttons">
+        <button data-section="#about" class="is-active">HOME</button>
+        <button data-section="#length">LENGTH</button>
+        <button data-section="#portfolio">WEIGHT</button>
+        <button data-section="#contact">DEV</button>
+      </div>
+    </div>
+  </div>
+  <script id="rendered-js">
+    const buttons = document.querySelectorAll(".card-buttons button");
+    const sections = document.querySelectorAll(".card-section");
+    const card = document.querySelector(".card");
+    
+    const handleButtonClick = e => {
+      const targetSection = e.target.getAttribute("data-section");
+      const section = document.querySelector(targetSection);
+      targetSection !== "#about" ?
+      card.classList.add("is-active") :
+      card.classList.remove("is-active");
+      card.setAttribute("data-state", targetSection);
+      sections.forEach(s => s.classList.remove("is-active"));
+      buttons.forEach(b => b.classList.remove("is-active"));
+      e.target.classList.add("is-active");
+      section.classList.add("is-active");
+    };
+    
+    buttons.forEach(btn => {
+      btn.addEventListener("click", handleButtonClick);
+    });
+    //# sourceURL=pen.js
+
+    function blcCalc() {
+        var OrderLength = document.getElementById("mtr").value;
+        var JointEnd = document.getElementById("wmtr").value;
+        var CavImp = document.getElementById("cvt").value;
+        var AlumWeight = document.getElementById("kgm").value;
+        var Cut = document.getElementById("pcs").value;
+        var Saw = document.getElementById("times").value;
+        var Cap = document.getElementById("cap").value;
+        var Diameter = document.getElementById("billetsize").value;
+
+        bmi = ((((OrderLength * Cut + JointEnd) * CavImp) * AlumWeight / Diameter) * Saw + +Cap);
+
+        document.getElementById("blcResult").innerHTML = (Math.round(bmi * 100) / 100).toFixed(2) + "inch";
+      }
+      function myReset() {
+        document.getElementById("input").reset();
+      }
+  </script>
+</body>
+</html>

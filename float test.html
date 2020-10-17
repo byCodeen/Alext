@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="floatstyle.css">
+</head>
+<body>
+    <form class="float-label" spellcheck="false">
+        <legend>Float Label Demo</legend>
+        
+        <!-- we need a wrapping element for positioning the label -->
+        <!-- the required attribute is ... required! -->
+        <div class="control">
+          <input type="text" name="title" placeholder="Title" required />
+          <!-- yes, this is not nice, in real live, do it with JS -->
+          <label for="title">Title</label>
+        </div>
+       
+        <div class="control small">
+          <input type="text" name="price" placeholder="Price" required />
+          <label for="price">Price</label>
+        </div>
+        <div class="control medium">
+          <input type="text" name="location" placeholder="Specific location (optional)" required />
+          <label for="location">Specific location (optional)</label>
+        </div>
+        
+        <div class="control">
+          <textarea name="description" placeholder="Description" required></textarea>
+          <label for="description">Description</label>
+        </div>
+        
+      </form>
+</body>
+</html>
