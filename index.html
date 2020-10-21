@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="apple-mobile-web-app-title" content="As'ad | Profile">
-  <title>As'ad | Profile</title>
+  <meta name="apple-mobile-web-app-title" content="ALUMEXT CALCULATOR">
+  <title>ALUMEXT CALCULATOR</title>
   <link rel="apple-touch-icon" type="image/png" href="https://image.flaticon.com/icons/svg/2571/2571136.svg">
   <link rel="shortcut icon" type="image/x-icon" href="https://image.flaticon.com/icons/svg/2571/2571136.svg">
   <link rel="mask-icon" type="" href="https://image.flaticon.com/icons/svg/2571/2571136.svg" color="#111">
@@ -17,7 +17,7 @@
 <body>
   <div class="card scroll" data-state="#about">
     <div class="card-header">
-      <div class="card-cover" style="background-image: url('/img/g1730.png')"></div>
+      <div class="card-cover" style="background-image: url('/img/codeenlogo.png')"></div>
         <img class="card-avatar" src="/img/codeenlogo.png" alt="avatar">
         <h1 class="card-fullname">ALUMEXT</h1>
         <h2 class="card-jobtitle">CALCULATOR BY CODEEN</h2>
@@ -138,7 +138,10 @@
               <path d="M22 6l-10 7L2 6"></path></svg>
               asadjemahri@gmail.com
             </div>
-            <a href="https://api.whatsapp.com/message/WGKRYFNAF4T3K1" target="blank"><button class="contact-me">PROJECT? CONTACT ME <i class="fab fa-whatsapp"></i></button></a>
+            <div class="button">
+              <a href="https://api.whatsapp.com/message/WGKRYFNAF4T3K1" target="blank"><button class="contact-me">PROJECT?</button></a>
+              <a href="https://paypal.me/asadjemahri" target="blank"><button class="coffee">BUY ME SOME COFFEE?</button></a>
+            </div>
           </div>
         </div>
       </div>
@@ -150,46 +153,6 @@
       </div>
     </div>
   </div>
-  <script id="rendered-js">
-    const buttons = document.querySelectorAll(".card-buttons button");
-    const sections = document.querySelectorAll(".card-section");
-    const card = document.querySelector(".card");
-    
-    const handleButtonClick = e => {
-      const targetSection = e.target.getAttribute("data-section");
-      const section = document.querySelector(targetSection);
-      targetSection !== "#about" ?
-      card.classList.add("is-active") :
-      card.classList.remove("is-active");
-      card.setAttribute("data-state", targetSection);
-      sections.forEach(s => s.classList.remove("is-active"));
-      buttons.forEach(b => b.classList.remove("is-active"));
-      e.target.classList.add("is-active");
-      section.classList.add("is-active");
-    };
-    
-    buttons.forEach(btn => {
-      btn.addEventListener("click", handleButtonClick);
-    });
-    //# sourceURL=pen.js
-
-    function blcCalc() {
-        var OrderLength = document.getElementById("mtr").value;
-        var JointEnd = document.getElementById("wmtr").value;
-        var CavImp = document.getElementById("cvt").value;
-        var AlumWeight = document.getElementById("kgm").value;
-        var Cut = document.getElementById("pcs").value;
-        var Saw = document.getElementById("times").value;
-        var Cap = document.getElementById("cap").value;
-        var Diameter = document.getElementById("billetsize").value;
-
-        bmi = ((((OrderLength * Cut + JointEnd) * CavImp) * AlumWeight / Diameter) * Saw + +Cap);
-
-        document.getElementById("blcResult").innerHTML = (Math.round(bmi * 100) / 100).toFixed(2) + "inch";
-      }
-      function myReset() {
-        document.getElementById("input").reset();
-      }
-  </script>
+  <script src="/script.js"></script>
 </body>
 </html>
