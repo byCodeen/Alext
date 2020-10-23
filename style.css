@@ -445,6 +445,11 @@
       transition: 0.3s;
     }
 
+    .billetlist {
+      margin-top: 15px;
+      margin-bottom: 10px;
+    }
+
     .blcform {
       margin-bottom: -50px;
     }
@@ -465,6 +470,15 @@
       float: left;
       position: relative;
       width: 50%;
+      border-bottom: 1px solid #ddd;
+      padding-top: 23px;
+      padding-bottom: 5px;
+    }
+
+    .float-label .control-full {
+      float: left;
+      position: relative;
+      width: 100%;
       border-bottom: 1px solid #ddd;
       padding-top: 23px;
       padding-bottom: 5px;
@@ -501,3 +515,48 @@
     .float-label input:focus + label {
       color: #2B2C48;
     }
+
+    .calcButton {
+      border: 0;
+      outline: none;
+      background: -webkit-gradient(linear, left top, right top, from(rgba(83, 200, 239, 0.8)), color-stop(96%, rgba(81, 106, 204, 0.8)));
+      background: linear-gradient(to right, rgba(83, 200, 239, 0.8) 0%, rgba(81, 106, 204, 0.8) 96%);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+      color: #fff;
+      padding: 12px 16px;
+      width: 49%;
+      border-radius: 5px;
+      margin-top: 10px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 500;
+      font-family: "Jost", sans-serif;
+      -webkit-transition: 0.3s;
+      transition: 0.3s;
+    }
+
+    .calcReset {
+      border: 0;
+      outline: none;
+      background: -webkit-gradient(linear, left top, right top, from(rgba(83, 200, 239, 0.8)), color-stop(96%, rgba(81, 106, 204, 0.8)));
+      background: linear-gradient(to right, rgba(83, 200, 239, 0.8) 0%, rgba(81, 106, 204, 0.8) 96%);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+      color: #fff;
+      padding: 12px 16px;
+      width: 49%;
+      border-radius: 5px;
+      margin-top: 10px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 500;
+      font-family: "Jost", sans-serif;
+      -webkit-transition: 0.3s;
+      transition: 0.3s;
+    }
+
+    .answer {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    

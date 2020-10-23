@@ -20,7 +20,7 @@ buttons.forEach(btn => {
 });
 //# sourceURL=pen.js
 
-function blcCalc() {
+  function blcCalc() {
     var OrderLength = document.getElementById("mtr").value;
     var JointEnd = document.getElementById("wmtr").value;
     var CavImp = document.getElementById("cvt").value;
@@ -30,9 +30,9 @@ function blcCalc() {
     var Cap = document.getElementById("cap").value;
     var Diameter = document.getElementById("billetsize").value;
 
-    bmi = OrderLength * Cut + JointEnd * CavImp * AlumWeight / Diameter * Saw + +Cap;
+    blc = (((((((OrderLength * Cut) + +JointEnd) * CavImp) * AlumWeight) / Diameter) * Saw) + +Cap);
 
-    document.getElementById("blcResult").innerHTML = (Math.round(bmi * 100) / 100).toFixed(2) + "inch";
+    document.getElementById("blcResult").innerHTML = (Math.round(blc * 100) / 100).toFixed(2) + "inch";
   }
   function myReset() {
     document.getElementById("input").reset();
