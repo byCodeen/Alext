@@ -30,7 +30,7 @@ function blcCalc() {
     var Cap = document.getElementById("cap").value;
     var Diameter = document.getElementById("billetsize").value;
 
-    bmi = ((((OrderLength * Cut + JointEnd) * CavImp) * AlumWeight / Diameter) * Saw + +Cap);
+    bmi = OrderLength * Cut + JointEnd * CavImp * AlumWeight / Diameter * Saw + +Cap;
 
     document.getElementById("blcResult").innerHTML = (Math.round(bmi * 100) / 100).toFixed(2) + "inch";
   }

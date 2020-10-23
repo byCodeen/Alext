@@ -51,35 +51,35 @@
               </span>
             </p>
             <p class="card-desc">
-              Calculate your Billet Length as per Aluminium Profile  Weight.
+              Calculate your Billet Length as per Aluminium Actual or Catalog Weight.
             </p>
             <form class="float-label" id="input" onsubmit="blcCalc()">
               <div class="control">
-                <input name="formname" placeholder="Order Length" type="text" id="mtr" required>
+                <input name="formname" placeholder="Order Length" type="number" id="mtr" required>
                 <label for="formname">Order Length <span class="tool" data-tip="hi"><i class="fas fa-question-circle"></i></span></label>
               </div>
               <div class="control">
-                <input name="formname" placeholder="Finish Cut" type="text" id="pcs" required>
+                <input name="formname" placeholder="Finish Cut" type="number" id="pcs" required>
                 <label for="formname">Finish Cut</label>
               </div>
               <div class="control">
-                <input placeholder="Joint End" type="text" id="wmtr" required>
+                <input placeholder="Joint End" type="number" id="wmtr" required>
                 <label for="formname">Joint End</label>
               </div>
               <div class="control">
-                <input placeholder="Cavity Imp" type="text" id="cvt" required>
+                <input placeholder="Cavity Imp" type="number" id="cvt" required>
                 <label for="formname">Cavity Imp</label>
               </div>
               <div class="control">
-                <input placeholder="Aluminium Weight" type="text" id="kgm" required>
+                <input placeholder="Aluminium Weight" type="number" id="kgm" required>
                 <label for="formname">Aluminium Weight</label>
               </div> 
               <div class="control">
-                <input placeholder="Cut Saw Times" type="text" id="times" required>
+                <input placeholder="Cut Saw Times" type="number" id="times" required>
                 <label for="formname">Cut Saw Times</label>
               </div> 
               <div class="control">
-                <input placeholder="Butt End" type="text" name="olength" id="cap" required>
+                <input placeholder="Butt End" type="number" name="olength" id="cap" required>
                 <label for="formname">Butt End</label>
               </div> 
             </form>
@@ -96,28 +96,38 @@
 
           </div>
         </div>
-        <div class="card-section" id="portfolio">
+        
+        <div class="card-section" id="weight">
           <div class="card-content">
-            <div class="card-subtitle">MY PORTFOLIO</div>
-            <div class="card-timeline">
-              <div class="card-item" data-year="2020">
-                <div class="card-item-title">Coding Experience Bootcamp by <span>CfDS x Progate</span></div>
-                <div class="card-item-desc">
-                  Web Development Path (NodeJs)
-                  <a href="#" target="blank">UGMxProgateC13</a>
-                </div>
-              </div>  
-              <div class="card-item" data-year="2020">
-                <div class="card-item-title">Aluminium Extrusion Calculator for <span>Kamco Aluminium</span></div>
-                <div class="card-item-desc">
-                  Web App and PWA, To solve and ease Extrusion Line on Planning
-                  <a href="#" target="blank">Alumext Calculator</a>
-                </div>
-              </div>
-            </div>
+            <div class="card-subtitle">BILLET LENGTH  CALCULATOR</div>
+            <p >Billet Diameter</p>
+            <p class="card-desc">
+              Calculate your Billet Length as per Aluminium Profile  Weight.
+            </p>
           </div>
         </div>
-        <div class="card-section" id="contact">
+
+        <div class="card-section" id="diff">
+          <div class="card-content">
+            <div class="card-subtitle">BILLET LENGTH  CALCULATOR</div>
+            <p >Billet Diameter</p>
+            <p class="card-desc">
+              Calculate your Billet Length as per Aluminium Profile  Weight.
+            </p>
+          </div>
+        </div>
+
+        <div class="card-section" id="recovery">
+          <div class="card-content">
+            <div class="card-subtitle">BILLET LENGTH  CALCULATOR</div>
+            <p >Billet Diameter</p>
+            <p class="card-desc">
+              Calculate your Billet Length as per Aluminium Profile  Weight.
+            </p>
+          </div>
+        </div>
+        
+        <div class="card-section" id="dev">
           <div class="card-content">
             <div class="card-subtitle">DEVELOPER CONTACT</div>
             <div class="card-contact-wrapper">
@@ -147,9 +157,11 @@
       </div>
       <div class="card-buttons">
         <button data-section="#about" class="is-active">HOME</button>
-        <button data-section="#length">LENGTH</button>
-        <button data-section="#portfolio">WEIGHT</button>
-        <button data-section="#contact">DEV</button>
+        <button data-section="#length">BL</button>
+        <button data-section="#weight">BW</button>
+        <button data-section="#diff">DIFF</button>
+        <button data-section="#recovery">REC</button>
+        <button data-section="#dev">DEV</button>
       </div>
     </div>
   </div>

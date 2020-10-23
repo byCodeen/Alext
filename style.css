@@ -55,12 +55,25 @@
       padding-top: 0;
     }
     
-    .card[data-state="#contact"] {
-      height: 445px;
-    }
-    
+
     .card[data-state="#length"] {
       height: 550px;
+    }
+
+    .card[data-state="#weight"] {
+      height: 450px;
+    }
+
+    .card[data-state="#diff"] {
+      height: 400px;
+    }
+
+    .card[data-state="#recovery"] {
+      height: 350px;
+    }
+
+    .card[data-state="#dev"] {
+      height: 445px;
     }
     
     .card.is-active .card-header {
@@ -451,7 +464,7 @@
     .float-label .control {
       float: left;
       position: relative;
-      width: 100%;
+      width: 50%;
       border-bottom: 1px solid #ddd;
       padding-top: 23px;
       padding-bottom: 5px;
