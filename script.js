@@ -20,20 +20,83 @@ buttons.forEach(btn => {
 });
 //# sourceURL=pen.js
 
-  function blcCalc() {
-    var OrderLength = document.getElementById("mtr").value;
-    var JointEnd = document.getElementById("wmtr").value;
-    var CavImp = document.getElementById("cvt").value;
-    var AlumWeight = document.getElementById("kgm").value;
-    var Cut = document.getElementById("pcs").value;
-    var Saw = document.getElementById("times").value;
-    var Cap = document.getElementById("cap").value;
-    var Diameter = document.getElementById("billetsize").value;
+$('select[data-menu]').each(function () {
 
-    blc = (((((((OrderLength * Cut) + +JointEnd) * CavImp) * AlumWeight) / Diameter) * Saw) + +Cap);
+  let select = $(this),
+  options = select.find('option'),
+  menu = $('<div />').addClass('select-menu'),
+  button = $('<div />').addClass('button'),
+  list = $('<ul />'),
+  arrow = $('<em />').prependTo(button);
 
-    document.getElementById("blcResult").innerHTML = (Math.round(blc * 100) / 100).toFixed(2) + "inch";
+  options.each(function (i) {
+    let option = $(this);
+    list.append($('<li />').text(option.text()));
+  });
+
+  menu.css('--t', select.find(':selected').index() * -41 + 'px');
+
+  select.wrap(menu);
+
+  button.append(list).insertAfter(select);
+
+  list.clone().insertAfter(button);
+
+});
+
+$(document).on('click', '.select-menu', function (e) {
+
+  let menu = $(this);
+
+  if (!menu.hasClass('open')) {
+    menu.addClass('open');
   }
-  function myReset() {
-    document.getElementById("input").reset();
+
+});
+
+$(document).on('click', '.select-menu > ul > li', function (e) {
+
+  let li = $(this),
+  menu = li.parent().parent(),
+  select = menu.children('select'),
+  selected = select.find('option:selected'),
+  index = li.index();
+
+  menu.css('--t', index * -41 + 'px');
+  selected.attr('selected', false);
+  select.find('option').eq(index).attr('selected', true);
+
+  menu.addClass(index > selected.index() ? 'tilt-down' : 'tilt-up');
+
+  setTimeout(() => {
+    menu.removeClass('open tilt-up tilt-down');
+  }, 500);
+
+});
+
+$(document).click(e => {
+  e.stopPropagation();
+  if ($('.select-menu').has(e.target).length === 0) {
+    $('.select-menu').removeClass('open');
   }
+});
+
+function blcCalc() {
+  let OrderLength = document.getElementById("mtr").value;
+  let JointEnd = document.getElementById("wmtr").value;
+  let CavImp = document.getElementById("cvt").value;
+  let AlumWeight = document.getElementById("kgm").value;
+  let Cut = document.getElementById("pcs").value;
+  let Saw = document.getElementById("times").value;
+  let Cap = document.getElementById("cap").value;
+  let Diameter = document.getElementById("billetsize").value;
+
+  blc = (((((((OrderLength * Cut) + +JointEnd) * CavImp) * AlumWeight) / Diameter) * Saw) + +Cap);
+
+
+  document.getElementById("blcResult").innerHTML = (Math.round(blc * 100) / 100).toFixed(2) + "inch";
+}
+
+function myReset() {
+  document.getElementById("input").reset();
+}

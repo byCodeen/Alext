@@ -40,18 +40,41 @@
         <div class="card-section" id="length">
           <div class="card-content">
             <div class="card-subtitle">BILLET LENGTH  CALCULATOR</div>
-            <p class="billetlist">Billet Diameter 
-              <span>
-                <select name="" id="billetsize">
-                  <option value="0.558">4</option>
-                  <option value="0.872">5</option>
-                  <option value="0">6</option>
-                  <option value="1.712">7</option>
-                </select>
-              </span>
-            </p>
+            
             <p class="card-desc">
-              Calculate your Billet Length as per Aluminium Actual or Catalog Weight.
+              <p class="billetlist">Billet Diameter 
+                <span>
+                  <div class="select-menu" style="--t:-41px;">
+                    <select data-menu="" name="Billet Diameter" id="billetsize">
+                      <option value="0.558">4</option>
+                      <option value="0.872">5</option>
+                      <option value="0">6</option>
+                      <option value="1.712">7</option>
+                    </select>
+                    <div class="button">
+                      <em></em>
+                      <ul>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                      </ul>
+                    </div>
+                    <ul>
+                      <li>4</li>
+                      <li>5</li>
+                      <li>6</li>
+                      <li>7</li>
+                    </ul>
+                  </div>
+                  <!-- <select name="" id="billetsize">
+                    <option value="0.558">4</option>
+                    <option value="0.872">5</option>
+                    <option value="0">6</option>
+                    <option value="1.712">7</option>
+                  </select> -->
+                </span>
+              </p>
             </p>
             <form class="float-label" id="input" onsubmit="blcCalc()">
               <div class="control">
@@ -161,6 +184,7 @@
       </div>
     </div>
   </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="/script.js"></script>
 </body>
 </html>
