@@ -8,7 +8,7 @@
     body {
       color: #2b2c48;
       font-family: "Jost", sans-serif;
-      background-image: url(https://github.com/fyxdev/Alumext/blob/main/img/alumprofile.jpg);
+      background-image: url(/img/alumprofile.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
