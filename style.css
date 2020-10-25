@@ -57,7 +57,7 @@
     
 
     .card[data-state="#length"] {
-      height: 552px;
+      height: 560px;
     }
 
     .card[data-state="#weight"] {
@@ -613,7 +613,7 @@
 
     .billetlist {
       margin-top: 15px;
-      margin-bottom: 0px;
+      margin-bottom: 5px;
       font-size: 15px;
     }
 
@@ -633,6 +633,14 @@
       font-size: smaller;
     }
 
+    .float-label {
+      float: left;
+      position: relative;
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 18px;
+      margin-top: -15px;
+    }
+    
     .float-label .control {
       float: left;
       position: relative;
@@ -642,7 +650,7 @@
       padding-bottom: 5px;
     }
 
-    .float-label .control-full {
+    .float-label .full {
       float: left;
       position: relative;
       width: 100%;
@@ -682,6 +690,52 @@
     .float-label input:focus + label {
       color: #2B2C48;
     }
+
+    form .control .form-tooltip {
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 3px;
+      color: #fff;
+      display: none;
+      font-size: small;
+      margin-left: 5px;
+      margin-top: 7px;
+      padding: 5px 10px;
+      position: absolute;
+      z-index: 1;
+    }
+    form .control .form-tooltip::before {
+      content: "";
+      position: absolute;
+      border: 5px solid rgba(0, 0, 0, 0.7);
+      border-right-color: transparent;
+      border-left-color: transparent;
+      border-top-width: 0;
+      left: 8px;
+      top: -5px;
+    }
+    form .control .form-tooltip-full {
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 3px;
+      color: #fff;
+      display: none;
+      font-size: small;
+      margin-left: 5px;
+      margin-top: 7px;
+      padding: 5px 10px;
+      position: absolute;
+      z-index: 1;
+    }
+    form .control .form-tooltip-full::before {
+      content: "";
+      position: absolute;
+      border: 5px solid rgba(0, 0, 0, 0.7);
+      border-right-color: transparent;
+      border-left-color: transparent;
+      border-top-width: 0;
+      left: 8px;
+      top: -5px;
+    }
+    
 
     .calcButton, .calcReset {
       border: 0;

@@ -67,43 +67,45 @@
                       <li>7</li>
                     </ul>
                   </div>
-                  <!-- <select name="" id="billetsize">
-                    <option value="0.558">4</option>
-                    <option value="0.872">5</option>
-                    <option value="0">6</option>
-                    <option value="1.712">7</option>
-                  </select> -->
                 </span>
               </p>
             </p>
-            <form class="float-label" id="input" onsubmit="blcCalc()">
+
+            <form class="float-label" id="input" onsubmit="blcCalc()" autocomplete="off">
               <div class="control">
-                <input name="Order Length" placeholder="Order Length" type="text" id="mtr" required>
+                <input class="form-input" name="Order Length" placeholder="Order Length" type="text" id="mtr" required>
                 <label for="Order Length">Order Length <span class="tool" data-tip="hi"><i class="fas fa-question-circle"></i></span></label>
+                <div class="form-tooltip">Insert your Length (m)</div>
               </div>
               <div class="control">
-                <input name="Finish Cut" placeholder="Finish Cut" type="text" id="pcs" required>
+                <input class="form-input" name="Finish Cut" placeholder="Finish Cut" type="text" id="pcs" required>
                 <label for="Finish Cut">Finish Cut</label>
+                <div class="form-tooltip">Cutting Plan Quantity</div>
               </div>
               <div class="control">
-                <input name="Joint End" placeholder="Joint End" type="text" id="wmtr" required>
+                <input class="form-input" name="Joint End" placeholder="Joint End" type="text" id="wmtr" required>
                 <label for="Joint End">Joint End</label>
+                <div class="form-tooltip">End to End + Joint (m)</div>
               </div>
               <div class="control">
-                <input name="Cavity Imp"placeholder="Cavity Imp" type="text" id="cvt" required>
+                <input class="form-input" name="Cavity Imp"placeholder="Cavity Imp" type="text" id="cvt" required>
                 <label for="Cavity Imp">Cavity Imp</label>
+                <div class="form-tooltip">Mold Cavity Available</div>
               </div>
               <div class="control">
-                <input name="Aluminium Weight" placeholder="Aluminium Weight" type="text" id="kgm" required>
+                <input class="form-input" name="Aluminium Weight" placeholder="Aluminium Weight" type="text" id="kgm" required>
                 <label for="Aluminium Weight">Aluminium Weight</label>
+                <div class="form-tooltip">Actual/Catalog (kg/m)</div>
               </div> 
               <div class="control">
-                <input name="Cut Saw Times" placeholder="Cut Saw Times" type="text" id="times" required>
+                <input class="form-input" name="Cut Saw Times" placeholder="Cut Saw Times" type="text" id="times" required>
                 <label for="Cut Saw Times">Cut Saw Times</label>
+                <div class="form-tooltip">Push / Billet</div>
               </div> 
-              <div class="control-full">
-                <input name="Butt End" placeholder="Butt End" type="text" id="cap" required>
+              <div class="control full">
+                <input class="form-input" name="Butt End" placeholder="Butt End" type="text" id="cap" required>
                 <label for="Butt End">Butt End</label>
+                <div class="form-tooltip-full">Butt End Thickness (inch)</div>
               </div>              
             </form>
             <div>
@@ -185,6 +187,7 @@
     </div>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- <script src="/script.js"></script> -->
   <script src="https://cdn.jsdelivr.net/gh/fyxdev/Alumext@main/script.js"></script>
 </body>
 </html>

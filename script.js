@@ -81,6 +81,26 @@ $(document).click(e => {
   }
 });
 
+$(function () {
+  $('form>.control>.form-input').
+  on('focus keyup', function () {
+    if ($(this).val().length >= 0) {
+      $(this).
+      siblings('.form-tooltip,.form-tooltip-full').
+      fadeIn('fast');
+    } else {
+      $(this).
+      siblings('.form-tooltip,.form-tooltip-full').
+      fadeOut('fast');
+    }
+  }).
+  on('blur', function () {
+    $(this).
+    siblings('.form-tooltip,.form-tooltip-full').
+    fadeOut('fast');
+  });
+});
+
 function blcCalc() {
   let OrderLength = document.getElementById("mtr").value;
   let JointEnd = document.getElementById("wmtr").value;
@@ -100,3 +120,4 @@ function blcCalc() {
 function myReset() {
   document.getElementById("input").reset();
 }
+
