@@ -39,7 +39,7 @@
         </div>
         <div class="card-section" id="length">
           <div class="card-content">
-            <div class="card-subtitle">BILLET LENGTH  CALCULATOR</div>
+            <div class="card-subtitle">BILLET LENGTH</div>
             
             <p class="card-desc">
               <p class="billetlist">Billet Diameter 
@@ -120,21 +120,83 @@
         
         <div class="card-section" id="weight">
           <div class="card-content">
-            <div class="card-subtitle">BILLET LENGTH  CALCULATOR</div>
-            <p >Billet Diameter</p>
+            <div class="card-subtitle">BILLET WEIGHT</div>
+            
             <p class="card-desc">
-              Calculate your Billet Length as per Aluminium Profile  Weight.
+              <p class="billetlist">Billet Diameter 
+                <span>
+                  <div class="select-menu" style="--t:-41px;">
+                    <select data-menu="" name="Billet Diameter" id="billetsize">
+                      <option value="0.558">4</option>
+                      <option value="0.872">5</option>
+                      <option value="0">6</option>
+                      <option value="1.712">7</option>
+                    </select>
+                    <div class="button">
+                      <em></em>
+                      <ul>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                      </ul>
+                    </div>
+                    <ul>
+                      <li>4</li>
+                      <li>5</li>
+                      <li>6</li>
+                      <li>7</li>
+                    </ul>
+                  </div>
+                </span>
+              </p>
             </p>
+
+            <form class="float-label" id="input" onsubmit="blcCalc()" autocomplete="off">
+              <div class="control full">
+                <input class="form-input" name="Billet Length" placeholder="Billet Length" type="text" id="mtr" required>
+                <label for="Billet Length">Billet Length</label>
+                <div class="form-tooltip">Used Billet Length (inch)</div>
+              </div>
+              <div class="control full">
+                <input class="form-input" name="Billet Used Quantity" placeholder="Billet Used Quantity" type="text" id="pcs" required>
+                <label for="Billet Used Quantity">Billet Used Quantity</label>
+                <div class="form-tooltip">Your Billet Used Quantity (pcs)</div>
+              </div>
+            </form>
+            <div>
+              <button class="calcButton" onclick="blcCalc()">Calculate</button>
+              <button class="calcReset" onclick="myReset()">Reset</button>
+            </div>
+            <div class="answer">
+              <span id="blcResult">Your Answer is Here</span>
+            </div>
           </div>
         </div>
 
         <div class="card-section" id="diff">
           <div class="card-content">
-            <div class="card-subtitle">BILLET LENGTH  CALCULATOR</div>
-            <p >Billet Diameter</p>
-            <p class="card-desc">
-              Calculate your Billet Length as per Aluminium Profile  Weight.
-            </p>
+            <div class="card-subtitle">PROFILE DIFFERENT WEIGHT</div>
+            <p >Actual vs Catalog Weight</p>
+            <form class="float-label" id="input" onsubmit="blcCalc()" autocomplete="off">
+              <div class="control full">
+                <input class="form-input" name="Billet Length" placeholder="Billet Length" type="text" id="mtr" required>
+                <label for="Billet Length">Billet Length</label>
+                <div class="form-tooltip">Used Billet Length (inch)</div>
+              </div>
+              <div class="control full">
+                <input class="form-input" name="Billet Used Quantity" placeholder="Billet Used Quantity" type="text" id="pcs" required>
+                <label for="Billet Used Quantity">Billet Used Quantity</label>
+                <div class="form-tooltip">Your Billet Used Quantity (pcs)</div>
+              </div>
+            </form>
+            <div>
+              <button class="calcButton" onclick="blcCalc()">Calculate</button>
+              <button class="calcReset" onclick="myReset()">Reset</button>
+            </div>
+            <div class="answer">
+              <span id="blcResult">Your Answer is Here</span>
+            </div>
           </div>
         </div>
 
@@ -145,6 +207,25 @@
             <p class="card-desc">
               Calculate your Billet Length as per Aluminium Profile  Weight.
             </p>
+            <form class="float-label" id="input" onsubmit="blcCalc()" autocomplete="off">
+              <div class="control full">
+                <input class="form-input" name="Billet Length" placeholder="Billet Length" type="text" id="mtr" required>
+                <label for="Billet Length">Billet Length</label>
+                <div class="form-tooltip">Used Billet Length (inch)</div>
+              </div>
+              <div class="control full">
+                <input class="form-input" name="Billet Used Quantity" placeholder="Billet Used Quantity" type="text" id="pcs" required>
+                <label for="Billet Used Quantity">Billet Used Quantity</label>
+                <div class="form-tooltip">Your Billet Used Quantity (pcs)</div>
+              </div>
+            </form>
+            <div>
+              <button class="calcButton" onclick="blcCalc()">Calculate</button>
+              <button class="calcReset" onclick="myReset()">Reset</button>
+            </div>
+            <div class="answer">
+              <span id="blcResult">Your Answer is Here</span>
+            </div>
           </div>
         </div>
         
@@ -167,7 +248,7 @@
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
               <path d="M22 6l-10 7L2 6"></path></svg>
-              asadjemahri@gmail.com
+              bycodeen@gmail.com
             </div>
             <div class="button">
               <a href="https://api.whatsapp.com/message/WGKRYFNAF4T3K1" target="blank"><button class="contact-me">PROJECT?</button></a>

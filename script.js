@@ -18,7 +18,6 @@ const handleButtonClick = e => {
 buttons.forEach(btn => {
   btn.addEventListener("click", handleButtonClick);
 });
-//# sourceURL=pen.js
 
 $('select[data-menu]').each(function () {
 
