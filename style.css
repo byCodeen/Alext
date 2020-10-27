@@ -459,8 +459,7 @@
       line-height: 25px;
       
     }
-    .select-menu select,
-    .select-menu .button {
+    .select-menu select {
       font-family: inherit;
       margin: 0;
       border: 0;

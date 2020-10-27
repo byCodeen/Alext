@@ -118,5 +118,6 @@ function blcCalc() {
 
 function myReset() {
   document.getElementById("input").reset();
+  document.getElementById('blcResult').innerHTML = "Your Answer is Here";
 }
 
