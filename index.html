@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="apple-mobile-web-app-title" content="ALUMEXT CALCULATOR">
-  <title>ALUMEXT CALCULATOR</title>
+  <meta name="apple-mobile-web-app-title" content="ALEXT CALCULATOR">
+  <title>ALEXT CALCULATOR</title>
   <link rel="apple-touch-icon" type="image/png" href="https://raw.githubusercontent.com/fyxdev/Alumext/main/img/codeenlogo.png">
   <link rel="shortcut icon" type="image/x-icon" href="https://raw.githubusercontent.com/fyxdev/Alumext/main/img/codeenlogo.png">
   <link rel="mask-icon" type="" href="https://raw.githubusercontent.com/fyxdev/Alumext/main/img/codeenlogo.png" color="#111">
@@ -19,7 +19,7 @@
     <div class="card-header">
       <div class="card-cover" style="background-image: url('https://raw.githubusercontent.com/fyxdev/Alumext/main/img/codeenlogo.png')"></div>
         <img class="card-avatar" src="https://raw.githubusercontent.com/fyxdev/Alumext/main/img/codeenlogo.png" alt="avatar">
-        <h1 class="card-fullname">ALUMEXT</h1>
+        <h1 class="card-fullname">ALEXT</h1>
         <h2 class="card-jobtitle">CALCULATOR BY CODEEN</h2>
       </div>
       <div class="card-main">
@@ -27,7 +27,7 @@
           <div class="card-content">
             <div class="card-subtitle">ABOUT</div>
             <p class="card-desc">
-              ALUMEXT Calculator Designed for Extrusion Line Calculation, Such as Billet Lenght, Billet Weight, Different Weight, and Recovery.
+              ALEXT Calculator Designed for Extrusion Line Calculation, Such as Billet Lenght, Billet Weight, Different Weight, and Recovery.
             </p>
           </div>
           <div class="card-social">
@@ -150,14 +150,15 @@
             <p >Actual vs Catalog Weight</p>
             <form class="float-label" id="input" onsubmit="blcCalc()" autocomplete="off">
               <div class="control full">
-                <input class="form-input" name="Billet Length" placeholder="Billet Length" type="text" id="#" required>
-                <label for="Billet Length">Billet Length</label>
-                <div class="form-tooltip">Used Billet Length (inch)</div>
+                <input class="form-input" name="Profile Actual Weight" placeholder="Profile Actual Weight" type="text" id="#" required>
+                <label for="Profile Actual Weight">Profile Actual Weight</label>
+                <div class="form-tooltip">Actual Weight by <b>Weight(g) / Length(mm)</b> (kg/m)</div>
               </div>
+              
               <div class="control full">
-                <input class="form-input" name="Billet Used Quantity" placeholder="Billet Used Quantity" type="text" id="#" required>
-                <label for="Billet Used Quantity">Billet Used Quantity</label>
-                <div class="form-tooltip">Your Billet Used Quantity (pcs)</div>
+                <input class="form-input" name="Profile Catalog Weight" placeholder="Profile Catalog Weight" type="text" id="#" required>
+                <label for="Profile Catalog Weight">Profile Catalog Weight</label>
+                <div class="form-tooltip">Catalog Weight by Drawing (kg/m)</div>
               </div>
             </form>
             <div>
@@ -238,7 +239,7 @@
     </div>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <!-- <script src="/script.js"></script> -->
+  <script src="/script.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/fyxdev/Alumext@main/script.js"></script>
 </body>
 </html>

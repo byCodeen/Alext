@@ -13,8 +13,7 @@
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
-      min-height: 100vh;
-      display: -webkit-box;
+      min-height: 100vh;  
       display: flex;
       flex-wrap: wrap;
       padding: 20px;
@@ -36,8 +35,7 @@
       position: relative;
       z-index: 1;
       overflow-x: hidden;
-      background-color: white;
-      display: -webkit-box;
+      background-color: white;      
       display: flex;
       -webkit-transition: 0.3s;
       transition: 0.3s;
@@ -186,8 +184,7 @@
     .card-main {
       position: relative;
       -webkit-box-flex: 1;
-              flex: 1;
-      display: -webkit-box;
+              flex: 1;     
       display: flex;
       padding-top: 10px;
       -webkit-box-orient: vertical;
@@ -215,7 +212,6 @@
     }
     
     .card-social {
-      display: -webkit-box;
       display: flex;
       -webkit-box-align: center;
       align-items: center;
@@ -234,7 +230,6 @@
       height: 32px;
       width: 32px;
       border-radius: 50%;
-      display: -webkit-inline-box;
       display: inline-flex;
       -webkit-box-align: center;
               align-items: center;
@@ -255,11 +250,9 @@
     }
     
     .card-buttons {
-      display: -webkit-box;
       display: flex;
       background-color: #fff;
       margin-top: auto;
-      position: -webkit-sticky;
       position: sticky;
       bottom: 0;
       left: 0;
@@ -383,7 +376,6 @@
     }
     
     .card-contact {
-      display: -webkit-box;
       display: flex;
       -webkit-box-align: center;
               align-items: center;
