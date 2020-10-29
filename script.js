@@ -111,13 +111,24 @@ function blcCalc() {
   let Diameter = document.getElementById("billetsize").value;
 
   blc = (((((((OrderLength * Cut) + +JointEnd) * CavImp) * AlumWeight) / Diameter) * Saw) + +Cap);
-
+  ol = ((OrderLength * Cut) + +JointEnd);
 
   document.getElementById("blcResult").innerHTML = (Math.round(blc * 100) / 100).toFixed(2) + "inch";
+  document.getElementById("OutputLength").innerHTML = (Math.round (ol * 100) / 100).toFixed(2) + "Meter";
 }
 
-function myReset() {
-  document.getElementById("input").reset();
-  document.getElementById('blcResult').innerHTML = "Your Answer is Here";
+function mylReset() {
+  document.getElementById("blcInput").reset();
+  document.getElementById("blcResult").innerHTML = "Billet Size";
+  document.getElementById("OutputLength").innerHTML = "Output Length";
 }
 
+function bwcCalc() {
+  let BilletLength = document.getElementById("bl").value;
+  let wBilletSize = document.getElementById("wBS").value;
+  let BilletUsed = document.getElementById("bu").value;
+
+  bwc = ((BilletLength * wBilletSize) * BilletUsed)
+
+  document.getElementById("bwcResult").innerHTML = bwc;
+}

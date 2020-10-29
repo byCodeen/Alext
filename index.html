@@ -56,7 +56,7 @@
               </p>
             </p>
 
-            <form class="float-label" id="input" onsubmit="blcCalc()" autocomplete="off">
+            <form class="float-label" id="blcInput" onsubmit="blcCalc()" autocomplete="off">
               <div class="control">
                 <input class="form-input" name="Order Length" placeholder="Order Length" type="text" id="mtr" required>
                 <label for="Order Length">Order Length</label>
@@ -95,10 +95,11 @@
             </form>
             <div>
               <button class="calcButton" onclick="blcCalc()">Calculate</button>
-              <button class="calcReset" onclick="myReset()">Reset</button>
+              <button class="calcReset" onclick="mylReset()">Reset</button>
             </div>
             <div class="answer">
-              <span id="blcResult">Your Answer is Here</span>
+              <span id="blcResult">Billet Size</span> =
+              <span id="OutputLength">Output Length</span>
             </div>
           </div>
         </div>
@@ -111,7 +112,7 @@
               <p class="billetlist">Billet Diameter 
                 <span>
                   <div class="select-menu" style="--t:-41px;">
-                    <select data-menu="" name="Billet Diameter" id="billetsize">
+                    <select data-menu="" name="Billet Diameter" id="wBS">
                       <option value="0.558">4</option>
                       <option value="0.872">5</option>
                       <option value="0">6</option>
@@ -122,24 +123,24 @@
               </p>
             </p>
 
-            <form class="float-label" id="input" onsubmit="blcCalc()" autocomplete="off">
+            <form class="float-label" id="bwcInput" onsubmit="bwcCalc()" autocomplete="off">
               <div class="control full">
-                <input class="form-input" name="Billet Length" placeholder="Billet Length" type="text" id="#" required>
+                <input class="form-input" name="Billet Length" placeholder="Billet Length" type="text" id="bl" required>
                 <label for="Billet Length">Billet Length</label>
                 <div class="form-tooltip">Used Billet Length (inch)</div>
               </div>
               <div class="control full">
-                <input class="form-input" name="Billet Used Quantity" placeholder="Billet Used Quantity" type="text" id="#" required>
+                <input class="form-input" name="Billet Used Quantity" placeholder="Billet Used Quantity" type="text" id="bu" required>
                 <label for="Billet Used Quantity">Billet Used Quantity</label>
                 <div class="form-tooltip">Your Billet Used Quantity (pcs)</div>
               </div>
             </form>
             <div>
-              <button class="calcButton" onclick="blcCalc()">Calculate</button>
-              <button class="calcReset" onclick="myReset()">Reset</button>
+              <button class="calcButton" onclick="bwcCalc()">Calculate</button>
+              <button class="calcReset" onclick="mywReset()">Reset</button>
             </div>
             <div class="answer">
-              <span id="blcResult">Your Answer is Here</span>
+              <span id="bwcResult">Your Answer is Here</span>
             </div>
           </div>
         </div>
@@ -166,7 +167,7 @@
               <button class="calcReset" onclick="myReset()">Reset</button>
             </div>
             <div class="answer">
-              <span id="blcResult">Your Answer is Here</span>
+              <span id="blcResult"></span>
             </div>
           </div>
         </div>
