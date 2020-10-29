@@ -101,14 +101,14 @@ $(function () {
 });
 
 function blcCalc() {
-  let OrderLength = document.getElementById("mtr").value;
-  let JointEnd = document.getElementById("wmtr").value;
-  let CavImp = document.getElementById("cvt").value;
-  let AlumWeight = document.getElementById("kgm").value;
-  let Cut = document.getElementById("pcs").value;
-  let Saw = document.getElementById("times").value;
-  let Cap = document.getElementById("cap").value;
-  let Diameter = document.getElementById("billetsize").value;
+  let OrderLength = document.getElementById("ol").value;
+  let JointEnd = document.getElementById("je").value;
+  let CavImp = document.getElementById("ci").value;
+  let AlumWeight = document.getElementById("aw").value;
+  let Cut = document.getElementById("fc").value;
+  let Saw = document.getElementById("cst").value;
+  let Cap = document.getElementById("be").value;
+  let Diameter = document.getElementById("lBS").value;
 
   blc = (((((((OrderLength * Cut) + +JointEnd) * CavImp) * AlumWeight) / Diameter) * Saw) + +Cap);
   ol = ((OrderLength * Cut) + +JointEnd);
@@ -119,8 +119,8 @@ function blcCalc() {
 
 function mylReset() {
   document.getElementById("blcInput").reset();
-  document.getElementById("blcResult").innerHTML = "Billet Size";
-  document.getElementById("OutputLength").innerHTML = "Output Length";
+  document.getElementById("blcResult").innerHTML = "Billet Size (inch)";
+  document.getElementById("OutputLength").innerHTML = "Output Length (meter)";
 }
 
 function bwcCalc() {
@@ -130,5 +130,10 @@ function bwcCalc() {
 
   bwc = ((BilletLength * wBilletSize) * BilletUsed)
 
-  document.getElementById("bwcResult").innerHTML = bwc;
+  document.getElementById("bwcResult").innerHTML = (Math.round (bwc * 100) / 100).toFixed(2) + "kg";
+}
+
+function mywReset() {
+  document.getElementById("bwcInput").reset();
+  document.getElementById("bwcResult").innerHTML = "Billet Weight (kg)";
 }

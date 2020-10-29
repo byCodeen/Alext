@@ -1,278 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="apple-mobile-web-app-title" content="ALEXT CALCULATOR">
-	<title>ALEXT CALCULATOR</title>
-	<link rel="apple-touch-icon" type="image/png"
-		href="https://raw.githubusercontent.com/fyxdev/Alumext/main/img/codeenlogo.png">
-	<link rel="shortcut icon" type="image/x-icon"
-		href="https://raw.githubusercontent.com/fyxdev/Alumext/main/img/codeenlogo.png">
-	<link rel="mask-icon" type="" href="https://raw.githubusercontent.com/fyxdev/Alumext/main/img/codeenlogo.png"
-		color="#111">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-	<link rel="stylesheet" href="style.css">
-	<script src="https://kit.fontawesome.com/4a749fecae.js" crossorigin="anonymous"></script>
-	<script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
-	<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-title" content="ALEXT CALCULATOR">
+  <title>ALEXT CALCULATOR</title>
+  <link rel="apple-touch-icon" type="image/png" href="https://raw.githubusercontent.com/fyxdev/Alumext/main/img/codeenlogo.png">
+  <link rel="shortcut icon" type="image/x-icon" href="https://raw.githubusercontent.com/fyxdev/Alumext/main/img/codeenlogo.png">
+  <link rel="mask-icon" type="" href="https://raw.githubusercontent.com/fyxdev/Alumext/main/img/codeenlogo.png" color="#111">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/4a749fecae.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
 </head>
-
 <body>
-	<div class="card scroll" data-state="#about">
-		<div class="card-header">
-			<div class="card-cover"
-				style="background-image: url('https://raw.githubusercontent.com/fyxdev/Alumext/main/img/codeenlogo.png')">
-			</div>
-			<img class="card-avatar" src="https://raw.githubusercontent.com/fyxdev/Alumext/main/img/codeenlogo.png"
-				alt="avatar">
-			<h1 class="card-fullname">ALEXT</h1>
-			<h2 class="card-jobtitle">CALCULATOR BY CODEEN</h2>
-		</div>
-		<div class="card-main">
-			<div class="card-section is-active" id="about">
-				<div class="card-content">
-					<div class="card-subtitle">ABOUT</div>
-					<p class="card-desc">
-						ALEXT Calculator Designed for Extrusion Line Calculation, Such as Billet Lenght, Billet Weight,
-						Different Weight, and Recovery.
-					</p>
-				</div>
-				<div class="card-social">
-					<a href="https://www.linkedin.com/in/hgad/" target="blank"><i class="fab fa-linkedin-in"></i></a>
-					<a href="https://www.instagram.com/_muhasad" target="blank"><i class="fab fa-instagram"></i></a>
-					<a href="https://dribbble.com/muhasad" target="blank"><i class="fab fa-dribbble"></i></a>
-					<a href="https://www.youtube.com/channel/UCeKMWPMfUcohrc7vKZog7qw" target="blank"><i
-							class="fab fa-youtube"></i></a>
-				</div>
-			</div>
-			<div class="card-section" id="length">
-				<div class="card-content">
-					<div class="card-subtitle">BILLET LENGTH</div>
+  <div class="card scroll" data-state="#about">
+    <div class="card-header">
+      <div class="card-cover" style="background-image: url('https://raw.githubusercontent.com/fyxdev/Alumext/main/img/codeenlogo.png')"></div>
+        <img class="card-avatar" src="https://raw.githubusercontent.com/fyxdev/Alumext/main/img/codeenlogo.png" alt="avatar">
+        <h1 class="card-fullname">ALEXT</h1>
+        <h2 class="card-jobtitle">CALCULATOR BY CODEEN</h2>
+      </div>
+      <div class="card-main">
+        <div class="card-section is-active" id="about">
+          <div class="card-content">
+            <div class="card-subtitle">ABOUT</div>
+            <p class="card-desc">
+              ALEXT Calculator Designed for Extrusion Line Calculation, Such as Billet Lenght, Billet Weight, Different Weight, and Recovery.
+            </p>
+          </div>
+          <div class="card-social">
+            <a href="https://www.linkedin.com/in/hgad/" target="blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/_muhasad" target="blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://dribbble.com/muhasad" target="blank"><i class="fab fa-dribbble"></i></a>
+            <a href="https://www.youtube.com/channel/UCeKMWPMfUcohrc7vKZog7qw" target="blank"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="card-section" id="length">
+          <div class="card-content">
+            <div class="card-subtitle">BILLET LENGTH</div>
+            
+            <p class="card-desc">
+              <p class="billetlist">Billet Diameter 
+                <span>
+                  <div class="select-menu" style="--t:-41px;">
+                    <select data-menu="" name="Billet Diameter" id="lBS">
+                      <option value="0.558">4</option>
+                      <option value="0.872">5</option>
+                      <option value="0">6</option>
+                      <option value="1.712">7</option>
+                    </select>                    
+                  </div>
+                </span>
+              </p>
+            </p>
 
-					<p class="card-desc">
-					<p class="billetlist">Billet Diameter
-						<span>
-							<div class="select-menu" style="--t:-41px;">
-								<select data-menu="" name="Billet Diameter" id="billetsize">
-									<option value="0.558">4</option>
-									<option value="0.872">5</option>
-									<option value="0">6</option>
-									<option value="1.712">7</option>
-								</select>
-							</div>
-						</span>
-					</p>
-					</p>
+            <form class="float-label" id="blcInput" onsubmit="blcCalc()" autocomplete="off">
+              <div class="control">
+                <input class="form-input" name="Order Length" placeholder="Order Length" type="text" id="ol" required>
+                <label for="Order Length">Order Length</label>
+                <div class="form-tooltip">Insert your Length (m)</div>
+              </div>
+              <div class="control">
+                <input class="form-input" name="Finish Cut" placeholder="Finish Cut" type="text" id="fc" required>
+                <label for="Finish Cut">Finish Cut</label>
+                <div class="form-tooltip">Cutting Plan Quantity</div>
+              </div>
+              <div class="control">
+                <input class="form-input" name="Joint End" placeholder="Joint End" type="text" id="je" required>
+                <label for="Joint End">Joint End</label>
+                <div class="form-tooltip">End to End + Joint (m)</div>
+              </div>
+              <div class="control">
+                <input class="form-input" name="Cavity Imp"placeholder="Cavity Imp" type="text" id="ci" required>
+                <label for="Cavity Imp">Cavity Imp</label>
+                <div class="form-tooltip">Mold Cavity Available</div>
+              </div>
+              <div class="control">
+                <input class="form-input" name="Aluminium Weight" placeholder="Aluminium Weight" type="text" id="aw" required>
+                <label for="Aluminium Weight">Aluminium Weight</label>
+                <div class="form-tooltip">Actual/Catalog (kg/m)</div>
+              </div> 
+              <div class="control">
+                <input class="form-input" name="Cut Saw Times" placeholder="Cut Saw Times" type="text" id="cst" required>
+                <label for="Cut Saw Times">Cut Saw Times</label>
+                <div class="form-tooltip">Push / Billet</div>
+              </div> 
+              <div class="control full">
+                <input class="form-input" name="Butt End" placeholder="Butt End" type="text" id="be" required>
+                <label for="Butt End">Butt End</label>
+                <div class="form-tooltip-full">Butt End Thickness (inch)</div>
+              </div>              
+            </form>
+            <div>
+              <button class="calcButton" onclick="blcCalc()">Calculate</button>
+              <button class="calcReset" onclick="mylReset()">Reset</button>
+            </div>
+            <div class="answer">
+							<span id="blcResult">Billet Size (inch)</span> =
+							<span id="OutputLength">Output Length (meter)</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card-section" id="weight">
+          <div class="card-content">
+            <div class="card-subtitle">BILLET WEIGHT</div>
+            
+            <p class="card-desc">
+              <p class="billetlist">Billet Diameter 
+                <span>
+                  <div class="select-menu" style="--t:-41px;">
+                    <select data-menu="" name="Billet Diameter" id="wBS">
+                      <option value="0.558">4</option>
+                      <option value="0.872">5</option>
+                      <option value="0">6</option>
+                      <option value="1.712">7</option>
+                    </select>                    
+                  </div>
+                </span>
+              </p>
+            </p>
 
-					<form class="float-label" id="input" onsubmit="blcCalc()" autocomplete="off">
-						<div class="control">
-							<input class="form-input" name="Order Length" placeholder="Order Length" type="text"
-								id="mtr" required>
-							<label for="Order Length">Order Length</label>
-							<div class="form-tooltip">Insert your Length (m)</div>
-						</div>
-						<div class="control">
-							<input class="form-input" name="Finish Cut" placeholder="Finish Cut" type="text" id="pcs"
-								required>
-							<label for="Finish Cut">Finish Cut</label>
-							<div class="form-tooltip">Cutting Plan Quantity</div>
-						</div>
-						<div class="control">
-							<input class="form-input" name="Joint End" placeholder="Joint End" type="text" id="wmtr"
-								required>
-							<label for="Joint End">Joint End</label>
-							<div class="form-tooltip">End to End + Joint (m)</div>
-						</div>
-						<div class="control">
-							<input class="form-input" name="Cavity Imp" placeholder="Cavity Imp" type="text" id="cvt"
-								required>
-							<label for="Cavity Imp">Cavity Imp</label>
-							<div class="form-tooltip">Mold Cavity Available</div>
-						</div>
-						<div class="control">
-							<input class="form-input" name="Aluminium Weight" placeholder="Aluminium Weight" type="text"
-								id="kgm" required>
-							<label for="Aluminium Weight">Aluminium Weight</label>
-							<div class="form-tooltip">Actual/Catalog (kg/m)</div>
-						</div>
-						<div class="control">
-							<input class="form-input" name="Cut Saw Times" placeholder="Cut Saw Times" type="text"
-								id="times" required>
-							<label for="Cut Saw Times">Cut Saw Times</label>
-							<div class="form-tooltip">Push / Billet</div>
-						</div>
-						<div class="control full">
-							<input class="form-input" name="Butt End" placeholder="Butt End" type="text" id="cap"
-								required>
-							<label for="Butt End">Butt End</label>
-							<div class="form-tooltip-full">Butt End Thickness (inch)</div>
-						</div>
-					</form>
-					<div>
-						<button class="calcButton" onclick="blcCalc()">Calculate</button>
-						<button class="calcReset" onclick="myReset()">Reset</button>
-					</div>
-					<div class="answer">
-						<span id="blcResult">Your Answer is Here</span>
-					</div>
-				</div>
-			</div>
+            <form class="float-label" id="bwcInput" onsubmit="bwcCalc()" autocomplete="off">
+              <div class="control full">
+                <input class="form-input" name="Billet Length" placeholder="Billet Length" type="text" id="bl" required>
+                <label for="Billet Length">Billet Length</label>
+                <div class="form-tooltip">Used Billet Length (inch)</div>
+              </div>
+              <div class="control full">
+                <input class="form-input" name="Billet Used Quantity" placeholder="Billet Used Quantity" type="text" id="bu" required>
+                <label for="Billet Used Quantity">Billet Used Quantity</label>
+                <div class="form-tooltip">Your Billet Used Quantity (pcs)</div>
+              </div>
+            </form>
+            <div>
+              <button class="calcButton" onclick="bwcCalc()">Calculate</button>
+              <button class="calcReset" onclick="mywReset()">Reset</button>
+            </div>
+            <div class="answer">
+              <span id="bwcResult">Billet Weight (kg)</span>
+            </div>
+          </div>
+        </div>
 
-			<div class="card-section" id="weight">
-				<div class="card-content">
-					<div class="card-subtitle">BILLET WEIGHT</div>
+        <div class="card-section" id="diff">
+          <div class="card-content">
+            <div class="card-subtitle">PROFILE DIFFERENT WEIGHT</div>
+            <p >Actual vs Catalog Weight</p>
+            <form class="float-label" id="input" onsubmit="blcCalc()" autocomplete="off">
+              <div class="control full">
+                <input class="form-input" name="Profile Actual Weight" placeholder="Profile Actual Weight" type="text" id="#" required>
+                <label for="Profile Actual Weight">Profile Actual Weight</label>
+                <div class="form-tooltip">Actual Weight by <b>Weight(g) / Length(mm)</b> (kg/m)</div>
+              </div>
+              
+              <div class="control full">
+                <input class="form-input" name="Profile Catalog Weight" placeholder="Profile Catalog Weight" type="text" id="#" required>
+                <label for="Profile Catalog Weight">Profile Catalog Weight</label>
+                <div class="form-tooltip">Catalog Weight by Drawing (kg/m)</div>
+              </div>
+            </form>
+            <div>
+              <button class="calcButton" onclick="blcCalc()">Calculate</button>
+              <button class="calcReset" onclick="myReset()">Reset</button>
+            </div>
+            <div class="answer">
+              <span id="blcResult">Your Answer is Here</span>
+            </div>
+          </div>
+        </div>
 
-					<p class="card-desc">
-					<p class="billetlist">Billet Diameter
-						<span>
-							<div class="select-menu" style="--t:-41px;">
-								<select data-menu="" name="Billet Diameter" id="billetsize">
-									<option value="0.558">4</option>
-									<option value="0.872">5</option>
-									<option value="0">6</option>
-									<option value="1.712">7</option>
-								</select>
-							</div>
-						</span>
-					</p>
-					</p>
-
-					<form class="float-label" id="input" onsubmit="blcCalc()" autocomplete="off">
-						<div class="control full">
-							<input class="form-input" name="Billet Length" placeholder="Billet Length" type="text"
-								id="#" required>
-							<label for="Billet Length">Billet Length</label>
-							<div class="form-tooltip">Used Billet Length (inch)</div>
-						</div>
-						<div class="control full">
-							<input class="form-input" name="Billet Used Quantity" placeholder="Billet Used Quantity"
-								type="text" id="#" required>
-							<label for="Billet Used Quantity">Billet Used Quantity</label>
-							<div class="form-tooltip">Your Billet Used Quantity (pcs)</div>
-						</div>
-					</form>
-					<div>
-						<button class="calcButton" onclick="blcCalc()">Calculate</button>
-						<button class="calcReset" onclick="myReset()">Reset</button>
-					</div>
-					<div class="answer">
-						<span id="blcResult">Your Answer is Here</span>
-					</div>
-				</div>
-			</div>
-
-			<div class="card-section" id="diff">
-				<div class="card-content">
-					<div class="card-subtitle">PROFILE DIFFERENT WEIGHT</div>
-					<p>Actual vs Catalog Weight</p>
-					<form class="float-label" id="input" onsubmit="blcCalc()" autocomplete="off">
-						<div class="control full">
-							<input class="form-input" name="Profile Actual Weight" placeholder="Profile Actual Weight"
-								type="text" id="#" required>
-							<label for="Profile Actual Weight">Profile Actual Weight</label>
-							<div class="form-tooltip">Actual Weight by <b>Weight(g) / Length(mm)</b> (kg/m)</div>
-						</div>
-
-						<div class="control full">
-							<input class="form-input" name="Profile Catalog Weight" placeholder="Profile Catalog Weight"
-								type="text" id="#" required>
-							<label for="Profile Catalog Weight">Profile Catalog Weight</label>
-							<div class="form-tooltip">Catalog Weight by Drawing (kg/m)</div>
-						</div>
-					</form>
-					<div>
-						<button class="calcButton" onclick="blcCalc()">Calculate</button>
-						<button class="calcReset" onclick="myReset()">Reset</button>
-					</div>
-					<div class="answer">
-						<span id="blcResult">Your Answer is Here</span>
-					</div>
-				</div>
-			</div>
-
-			<div class="card-section" id="recovery">
-				<div class="card-content">
-					<div class="card-subtitle">BILLET LENGTH CALCULATOR</div>
-					<p>Billet Diameter</p>
-					<p class="card-desc">
-						Calculate your Billet Length as per Aluminium Profile Weight.
-					</p>
-					<form class="float-label" id="input" onsubmit="blcCalc()" autocomplete="off">
-						<div class="control full">
-							<input class="form-input" name="Billet Length" placeholder="Billet Length" type="text"
-								id="#" required>
-							<label for="Billet Length">Billet Length</label>
-							<div class="form-tooltip">Used Billet Length (inch)</div>
-						</div>
-						<div class="control full">
-							<input class="form-input" name="Billet Used Quantity" placeholder="Billet Used Quantity"
-								type="text" id="#" required>
-							<label for="Billet Used Quantity">Billet Used Quantity</label>
-							<div class="form-tooltip">Your Billet Used Quantity (pcs)</div>
-						</div>
-					</form>
-					<div>
-						<button class="calcButton" onclick="blcCalc()">Calculate</button>
-						<button class="calcReset" onclick="myReset()">Reset</button>
-					</div>
-					<div class="answer">
-						<span id="blcResult">Your Answer is Here</span>
-					</div>
-				</div>
-			</div>
-
-			<div class="card-section" id="dev">
-				<div class="card-content">
-					<div class="card-subtitle">DEVELOPER CONTACT</div>
-					<div class="card-contact-wrapper">
-						<div class="card-contact">
-							<svg class="lnr lnr-user" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
-								stroke-linecap="round" stroke-linejoin="round">
-								<use xlink:href="#lnr-user"></use>
-							</svg>
-							CODEEN Developer
-						</div>
-						<div class="card-contact">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-								stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-								<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path>
-								<circle cx="12" cy="10" r="3"></circle>
-							</svg>
-							Coastal Bintulu - Miri, Sarawak, Malaysia, 97000
-						</div>
-						<div class="card-contact">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-								stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-								<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
-								</path>
-								<path d="M22 6l-10 7L2 6"></path>
-							</svg>
-							bycodeen@gmail.com
-						</div>
-						<div class="button">
-							<a href="https://api.whatsapp.com/message/WGKRYFNAF4T3K1" target="blank"><button
-									class="contact-me">PROJECT?</button></a>
-							<a href="https://paypal.me/asadjemahri" target="blank"><button class="coffee">BUY ME SOME
-									COFFEE?</button></a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="card-buttons">
-				<button data-section="#about" class="is-active">HOME</button>
-				<button data-section="#length">BL</button>
-				<button data-section="#weight">BW</button>
-				<button data-section="#diff">DIFF</button>
-				<button data-section="#recovery">REC</button>
-				<button data-section="#dev">DEV</button>
-			</div>
-		</div>
-	</div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="/script.js"></script>
-	<script src="https://cdn.jsdelivr.net/gh/fyxdev/Alumext@main/script.js"></script>
+        <div class="card-section" id="recovery">
+          <div class="card-content">
+            <div class="card-subtitle">BILLET LENGTH  CALCULATOR</div>
+            <p >Billet Diameter</p>
+            <p class="card-desc">
+              Calculate your Billet Length as per Aluminium Profile  Weight.
+            </p>
+            <form class="float-label" id="input" onsubmit="blcCalc()" autocomplete="off">
+              <div class="control full">
+                <input class="form-input" name="Billet Length" placeholder="Billet Length" type="text" id="#" required>
+                <label for="Billet Length">Billet Length</label>
+                <div class="form-tooltip">Used Billet Length (inch)</div>
+              </div>
+              <div class="control full">
+                <input class="form-input" name="Billet Used Quantity" placeholder="Billet Used Quantity" type="text" id="#" required>
+                <label for="Billet Used Quantity">Billet Used Quantity</label>
+                <div class="form-tooltip">Your Billet Used Quantity (pcs)</div>
+              </div>
+            </form>
+            <div>
+              <button class="calcButton" onclick="blcCalc()">Calculate</button>
+              <button class="calcReset" onclick="myReset()">Reset</button>
+            </div>
+            <div class="answer">
+              <span id="blcResult">Your Answer is Here</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card-section" id="dev">
+          <div class="card-content">
+            <div class="card-subtitle">DEVELOPER CONTACT</div>
+            <div class="card-contact-wrapper">
+              <div class="card-contact">
+                <svg class="lnr lnr-user" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <use xlink:href="#lnr-user"></use></svg>
+                CODEEN Developer  
+              </div>
+              <div class="card-contact">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle></svg>
+              Coastal Bintulu - Miri, Sarawak, Malaysia, 97000
+            </div>
+            <div class="card-contact">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <path d="M22 6l-10 7L2 6"></path></svg>
+              bycodeen@gmail.com
+            </div>
+            <div class="button">
+              <a href="https://api.whatsapp.com/message/WGKRYFNAF4T3K1" target="blank"><button class="contact-me">PROJECT?</button></a>
+              <a href="https://paypal.me/asadjemahri" target="blank"><button class="coffee">BUY ME SOME COFFEE?</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-buttons">
+        <button data-section="#about" class="is-active">HOME</button>
+        <button data-section="#length">BL</button>
+        <button data-section="#weight">BW</button>
+        <button data-section="#diff">DIFF</button>
+        <button data-section="#recovery">REC</button>
+        <button data-section="#dev">DEV</button>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fyxdev/Alumext@main/script.js"></script>
 </body>
-
 </html>
