@@ -32,7 +32,7 @@
           </div>
           <div class="card-social">
             <a href="https://www.linkedin.com/in/hgad/" target="blank"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://www.instagram.com/_muhasad" target="blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.instagram.com/asad.log" target="blank"><i class="fab fa-instagram"></i></a>
             <a href="https://dribbble.com/muhasad" target="blank"><i class="fab fa-dribbble"></i></a>
             <a href="https://www.youtube.com/channel/UCeKMWPMfUcohrc7vKZog7qw" target="blank"><i class="fab fa-youtube"></i></a>
           </div>
@@ -58,37 +58,37 @@
 
             <form class="float-label" id="blcInput" onsubmit="blcCalc()" autocomplete="off">
               <div class="control">
-                <input class="form-input" name="Order Length" placeholder="Order Length" type="text" id="ol" required>
+                <input class="form-input" name="Order Length" placeholder="Order Length" type="tel" id="ol" required>
                 <label for="Order Length">Order Length</label>
                 <div class="form-tooltip">Insert your Length (m)</div>
               </div>
               <div class="control">
-                <input class="form-input" name="Finish Cut" placeholder="Finish Cut" type="text" id="fc" required>
+                <input class="form-input" name="Finish Cut" placeholder="Finish Cut" type="tel" id="fc" required>
                 <label for="Finish Cut">Finish Cut</label>
                 <div class="form-tooltip">Cutting Plan Quantity</div>
               </div>
               <div class="control">
-                <input class="form-input" name="Joint End" placeholder="Joint End" type="text" id="je" required>
+                <input class="form-input" name="Joint End" placeholder="Joint End" type="tel" id="je" required>
                 <label for="Joint End">Joint End</label>
                 <div class="form-tooltip">End to End + Joint (m)</div>
               </div>
               <div class="control">
-                <input class="form-input" name="Cavity Imp"placeholder="Cavity Imp" type="text" id="ci" required>
+                <input class="form-input" name="Cavity Imp"placeholder="Cavity Imp" type="tel" id="ci" required>
                 <label for="Cavity Imp">Cavity Imp</label>
                 <div class="form-tooltip">Mold Cavity Available</div>
               </div>
               <div class="control">
-                <input class="form-input" name="Aluminium Weight" placeholder="Aluminium Weight" type="text" id="aw" required>
+                <input class="form-input" name="Aluminium Weight" placeholder="Aluminium Weight" type="tel" id="aw" required>
                 <label for="Aluminium Weight">Aluminium Weight</label>
                 <div class="form-tooltip">Actual/Catalog (kg/m)</div>
               </div> 
               <div class="control">
-                <input class="form-input" name="Cut Saw Times" placeholder="Cut Saw Times" type="text" id="cst" required>
+                <input class="form-input" name="Cut Saw Times" placeholder="Cut Saw Times" type="tel" id="cst" required>
                 <label for="Cut Saw Times">Cut Saw Times</label>
                 <div class="form-tooltip">Push / Billet</div>
               </div> 
               <div class="control full">
-                <input class="form-input" name="Butt End" placeholder="Butt End" type="text" id="be" required>
+                <input class="form-input" name="Butt End" placeholder="Butt End" type="tel" id="be" required>
                 <label for="Butt End">Butt End</label>
                 <div class="form-tooltip-full">Butt End Thickness (inch)</div>
               </div>              
@@ -149,25 +149,25 @@
           <div class="card-content">
             <div class="card-subtitle">PROFILE DIFFERENT WEIGHT</div>
             <p >Actual vs Catalog Weight</p>
-            <form class="float-label" id="input" onsubmit="blcCalc()" autocomplete="off">
+            <form class="float-label" id="pdwInput" onsubmit="pdwCalc()" autocomplete="off">
               <div class="control full">
-                <input class="form-input" name="Profile Actual Weight" placeholder="Profile Actual Weight" type="text" id="#" required>
+                <input class="form-input" name="Profile Actual Weight" placeholder="Profile Actual Weight" type="tel" id="paw" required>
                 <label for="Profile Actual Weight">Profile Actual Weight</label>
                 <div class="form-tooltip">Actual Weight by <b>Weight(g) / Length(mm)</b> (kg/m)</div>
               </div>
               
               <div class="control full">
-                <input class="form-input" name="Profile Catalog Weight" placeholder="Profile Catalog Weight" type="text" id="#" required>
+                <input class="form-input" name="Profile Catalog Weight" placeholder="Profile Catalog Weight" type="tel" id="pcw" required>
                 <label for="Profile Catalog Weight">Profile Catalog Weight</label>
                 <div class="form-tooltip">Catalog Weight by Drawing (kg/m)</div>
               </div>
             </form>
             <div>
-              <button class="calcButton" onclick="blcCalc()">Calculate</button>
-              <button class="calcReset" onclick="myReset()">Reset</button>
+              <button class="calcButton" onclick="pdwCalc()">Calculate</button>
+              <button class="calcReset" onclick="mydReset()">Reset</button>
             </div>
             <div class="answer">
-              <span id="blcResult">Your Answer is Here</span>
+              <span id="pdwResult">Profile Different (%)</span>
             </div>
           </div>
         </div>
@@ -181,12 +181,12 @@
             </p>
             <form class="float-label" id="input" onsubmit="blcCalc()" autocomplete="off">
               <div class="control full">
-                <input class="form-input" name="Billet Length" placeholder="Billet Length" type="text" id="#" required>
+                <input class="form-input" name="Billet Length" placeholder="Billet Length" type="tel" id="#" required>
                 <label for="Billet Length">Billet Length</label>
                 <div class="form-tooltip">Used Billet Length (inch)</div>
               </div>
               <div class="control full">
-                <input class="form-input" name="Billet Used Quantity" placeholder="Billet Used Quantity" type="text" id="#" required>
+                <input class="form-input" name="Billet Used Quantity" placeholder="Billet Used Quantity" type="tel" id="#" required>
                 <label for="Billet Used Quantity">Billet Used Quantity</label>
                 <div class="form-tooltip">Your Billet Used Quantity (pcs)</div>
               </div>

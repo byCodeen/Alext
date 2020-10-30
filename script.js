@@ -1,3 +1,5 @@
+// Tab Controll
+
 const buttons = document.querySelectorAll(".card-buttons button");
 const sections = document.querySelectorAll(".card-section");
 const card = document.querySelector(".card");
@@ -18,6 +20,8 @@ const handleButtonClick = e => {
 buttons.forEach(btn => {
   btn.addEventListener("click", handleButtonClick);
 });
+
+// Billet Diameter
 
 $('select[data-menu]').each(function () {
 
@@ -80,6 +84,8 @@ $(document).click(e => {
   }
 });
 
+// Tooltip
+
 $(function () {
   $('form>.control>.form-input').
   on('focus keyup', function () {
@@ -99,6 +105,8 @@ $(function () {
     fadeOut('fast');
   });
 });
+
+// Billet Length
 
 function blcCalc() {
   let OrderLength = document.getElementById("ol").value;
@@ -123,12 +131,14 @@ function mylReset() {
   document.getElementById("OutputLength").innerHTML = "Output Length (meter)";
 }
 
+// Billet Weight
+
 function bwcCalc() {
   let BilletLength = document.getElementById("bl").value;
   let wBilletSize = document.getElementById("wBS").value;
   let BilletUsed = document.getElementById("bu").value;
 
-  bwc = ((BilletLength * wBilletSize) * BilletUsed)
+  bwc = ((BilletLength * wBilletSize) * BilletUsed);
 
   document.getElementById("bwcResult").innerHTML = (Math.round (bwc * 100) / 100).toFixed(2) + "kg";
 }
@@ -136,4 +146,21 @@ function bwcCalc() {
 function mywReset() {
   document.getElementById("bwcInput").reset();
   document.getElementById("bwcResult").innerHTML = "Billet Weight (kg)";
+}
+
+// Profile Diff
+
+function pdwCalc() {
+  let ActualWeight = document.getElementById("paw").value;
+  let CatalogWeight = document.getElementById("pcw").value;
+  
+  pdw = ((ActualWeight - CatalogWeight) / CatalogWeight) || 0;
+
+  document.getElementById("pdwResult").innerHTML =  (Math.round (pdw * 100)).toFixed(0) + "%";
+}
+
+
+function mydReset() {
+  document.getElementById("pdwInput").reset();
+  document.getElementById("pdwResult").innerHTML = "Profile Different (%)";
 }
