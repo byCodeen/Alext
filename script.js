@@ -121,14 +121,14 @@ function blcCalc() {
   blc = (((((((OrderLength * Cut) + +JointEnd) * CavImp) * AlumWeight) / Diameter) * Saw) + +Cap);
   ol = ((OrderLength * Cut) + +JointEnd);
 
-  document.getElementById("blcResult").innerHTML = (Math.round(blc * 100) / 100).toFixed(2) + "inch";
-  document.getElementById("OutputLength").innerHTML = (Math.round (ol * 100) / 100).toFixed(2) + "Meter";
+  document.getElementById("blcResult").innerHTML = `${(Math.round(blc * 100) / 100).toFixed(2)} inch`;
+  document.getElementById("OutputLength").innerHTML = `${(Math.round (ol * 100) / 100).toFixed(2)} Meter`;
 }
 
 function mylReset() {
   document.getElementById("blcInput").reset();
-  document.getElementById("blcResult").innerHTML = "Billet Size (inch)";
-  document.getElementById("OutputLength").innerHTML = "Output Length (meter)";
+  document.getElementById("blcResult").innerHTML = `Billet Size (inch)`;
+  document.getElementById("OutputLength").innerHTML = `Output Length (meter)`;
 }
 
 // Billet Weight
@@ -140,12 +140,12 @@ function bwcCalc() {
 
   bwc = ((BilletLength * wBilletSize) * BilletUsed);
 
-  document.getElementById("bwcResult").innerHTML = (Math.round (bwc * 100) / 100).toFixed(2) + "kg";
+  document.getElementById("bwcResult").innerHTML = `${(Math.round (bwc * 100) / 100).toFixed(2)} kg`;
 }
 
 function mywReset() {
   document.getElementById("bwcInput").reset();
-  document.getElementById("bwcResult").innerHTML = "Billet Weight (kg)";
+  document.getElementById("bwcResult").innerHTML = `Billet Weight (kg)`;
 }
 
 // Profile Diff
@@ -156,11 +156,11 @@ function pdwCalc() {
   
   pdw = ((ActualWeight - CatalogWeight) / CatalogWeight) || 0;
 
-  document.getElementById("pdwResult").innerHTML =  (Math.round (pdw * 100)).toFixed(0) + "%";
+  document.getElementById("pdwResult").innerHTML =  `${(Math.round (pdw * 100)).toFixed(0)} %`;
 }
 
 
 function mydReset() {
   document.getElementById("pdwInput").reset();
-  document.getElementById("pdwResult").innerHTML = "Profile Different (%)";
+  document.getElementById("pdwResult").innerHTML = `Profile Different (%)`;
 }
