@@ -63,7 +63,7 @@
     }
 
     .card[data-state="#diff"] {
-      height: 425px;
+      height: 405px;
     }
 
     .card[data-state="#recovery"] {
@@ -602,7 +602,7 @@
     }
 
     .billetlist {
-      margin-top: 15px;
+      margin-top: 0px;
       margin-bottom: 5px;
       font-size: 15px;
     }
