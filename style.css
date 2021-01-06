@@ -57,22 +57,27 @@
 
     .card[data-state="#length"] {
       height: auto;
+      transform: none;
     }
 
     .card[data-state="#weight"] {
       height: auto;
+      transform: none;
     }
 
     .card[data-state="#diff"] {
       height: auto;
+      transform: none;
     }
 
     .card[data-state="#recovery"] {
       height: auto;
+      transform: none;
     }
 
     .card[data-state="#dev"] {
-      height: autopx;
+      height: auto;
+      transform: none;
     }
     
     .card.is-active .card-header {
