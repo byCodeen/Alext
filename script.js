@@ -164,3 +164,19 @@ function mydReset() {
   document.getElementById("pdwInput").reset();
   document.getElementById("pdwResult").innerHTML = `Profile Different (%)`;
 }
+
+// Recovery
+
+function RCalc() {
+  let BilletWeight = document.getElementById("buw").value;
+  let OutputWeight = document.getElementById("ow").value;
+
+  R = (OutputWeight / BilletWeight) || 0;
+
+  document.getElementById("RResult").innerHTML = `${(Math.round (R * 100)).toFixed(0)} %`;
+}
+
+function RReset() {
+  document.getElementById("RInput").reset();
+  document.getElementById("RResult").innerHTML = `Recovery (%)`;
+}

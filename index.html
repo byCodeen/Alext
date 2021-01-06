@@ -27,7 +27,7 @@
           <div class="card-content">
             <div class="card-subtitle">ABOUT</div>
             <p class="card-desc">
-              ALEXT Calculator Designed for Extrusion Line Calculation, Such as Billet Lenght, Billet Weight, Different Weight, and Recovery.
+              ALEXT Calculator Designed for Aluminium Extrusion Line Calculation, Such as Length, Weight, Different Weight, and Recovery.
             </p>
           </div>
           <div class="card-social">
@@ -180,24 +180,24 @@
             <p class="card-desc">
               Minimize your Wastage to Achieve a Better Recovery
             </p>
-            <form class="float-label" id="input" onsubmit="blcCalc()" autocomplete="off">
+            <form class="float-label" id="RInput" onsubmit="RCalc()" autocomplete="off">
               <div class="control full">
-                <input class="form-input" name="Billet Used Weight" placeholder="Billet Used Weight" type="tel" id="ow" required>
+                <input class="form-input" name="Billet Used Weight" placeholder="Billet Used Weight" type="tel" id="buw" required>
                 <label for="Billet Used Weight">Billet Used Weight</label>
-                <div class="form-tooltip"><b>Order Length (m) x Profile Actual Weight (kg/m)</b> = (Kg)</div>
+                <div class="form-tooltip">Insert your Billet Used Weight Here! (kg)</div>
               </div>
               <div class="control full">
-                <input class="form-input" name="Extrusion Output Weight" placeholder="Extrusion Output Weight" type="tel" id="#" required>
+                <input class="form-input" name="Extrusion Output Weight" placeholder="Extrusion Output Weight" type="tel" id="ow" required>
                 <label for="Extrusion Output Weight">Extrusion Output Weight</label>
-                <div class="form-tooltip">Your Billet Used Quantity (pcs)</div>
+                <div class="form-tooltip">Insert your Output Weight Here! (kg)</div>
               </div>
             </form>
             <div>
-              <button class="calcButton" onclick="blcCalc()">Calculate</button>
-              <button class="calcReset" onclick="myReset()">Reset</button>
+              <button class="calcButton" onclick="RCalc()">Calculate</button>
+              <button class="calcReset" onclick="RReset()">Reset</button>
             </div>
             <div class="answer">
-              <span id="blcResult">Your Answer is Here</span>
+              <span id="RResult">Your Answer is Here</span>
             </div>
           </div>
         </div>

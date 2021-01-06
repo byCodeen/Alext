@@ -63,11 +63,11 @@
     }
 
     .card[data-state="#diff"] {
-      height: 405px;
+      height: 410px;
     }
 
     .card[data-state="#recovery"] {
-      height: 470px;
+      height: 431px;
     }
 
     .card[data-state="#dev"] {
@@ -603,7 +603,7 @@
 
     .billetlist {
       margin-top: 0px;
-      margin-bottom: 5px;
+      margin-bottom: 0px;
       font-size: 15px;
     }
 
@@ -628,7 +628,7 @@
       position: relative;
       border-bottom: 1px solid #ddd;
       margin-bottom: 18px;
-      margin-top: -15px;
+      margin-top: -10px;
     }
     
     .float-label .control {
