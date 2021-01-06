@@ -47,31 +47,32 @@
     }
     
     .card[data-state="#about"] {
-      height: 450px;
+      height: auto;
     }
+
     .card[data-state="#about"] .card-main {
       padding-top: 0;
     }
     
 
     .card[data-state="#length"] {
-      height: 560px;
+      height: auto;
     }
 
     .card[data-state="#weight"] {
-      height: 470px;
+      height: auto;
     }
 
     .card[data-state="#diff"] {
-      height: 410px;
+      height: auto;
     }
 
     .card[data-state="#recovery"] {
-      height: 431px;
+      height: auto;
     }
 
     .card[data-state="#dev"] {
-      height: 445px;
+      height: autopx;
     }
     
     .card.is-active .card-header {
